@@ -182,17 +182,20 @@ nav {
     }
   }
 
-  &__logo:after {
-    content: 'BEAUTY';
-    margin-left: 20px;
-    position: absolute;
-    margin-top: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.1em;
-    color: #F13C6E;
+  &__logo {
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 20px;
+      position: absolute;
+      margin-top: 20px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0.1em;
+      color: #F13C6E;
+    }
   }
 
 

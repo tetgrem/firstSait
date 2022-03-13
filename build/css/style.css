@@ -166,8 +166,16 @@ nav {
   border-bottom: 1px solid #EFEFEF;
 }
 
-.header__logo:after {
-  content: "BEAUTY";
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo span {
   margin-left: 20px;
   position: absolute;
   margin-top: 20px;
