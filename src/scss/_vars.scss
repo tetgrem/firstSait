@@ -4,9 +4,14 @@ $containerWidth: 1150;
 $containerPadding: 40;
 $containerSidePadding: math.div($containerPadding, 2);
 $breakpoint1450: 1449.98 + px;
+$breakpoint1190: 1189.98 + px;
+$breakpoint1120: 1119.98 + px;
+  $breakpoint1064: 1063.98 + px;
 $breakpoint992: 991.98 + px;
 $breakpoint768: 767.98 + px;
+$breakpoint589: 588.98 + px;
 $breakpoint480: 479.98 + px;
+$breakpoint368: 367.98 + px;
 
 // Burger Menu
 $burgerBreakpoint: $breakpoint768;

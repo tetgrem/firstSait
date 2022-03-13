@@ -1,0 +1,84 @@
+//brands 
+
+.brands {
+
+  &__section {
+    background-color: #EFEFEF;
+    padding-top: 100px;
+  }
+
+  &__top_row, &__center_row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  &__img_top {
+    flex: 0 0 287px;
+    padding: 35px 65px;
+    background-color: #fff;
+    border-right: 1px solid #EFEFEF;
+    @media (max-width: $breakpoint1190) {
+      margin-bottom: 20px;
+      flex: 0 0 487px;
+      padding: 35px 185px;
+    }
+    @media (max-width: $breakpoint589) {
+      margin-bottom: 20px;
+      flex: 0 0 387px;
+      padding: 35px 120px;
+    }
+
+    @media (max-width: $breakpoint480) {
+      margin-bottom: 20px;
+      flex: 0 0 257px;
+      padding: 35px 60px;
+    }
+  }
+
+  &__img_center {
+    flex: 0 0 287px;
+    padding: 35px 65px;
+    background-color: #fff;
+    border-top:1px solid #EFEFEF;
+    border-right: 1px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
+    @media (max-width: $breakpoint1190) {
+      margin-bottom: 20px;
+      flex: 0 0 487px;
+      padding: 35px 185px;
+    }
+    @media (max-width: $breakpoint589) {
+      margin-bottom: 20px;
+      flex: 0 0 387px;
+      padding: 35px 120px;
+    }
+    @media (max-width: $breakpoint480) {
+      margin-bottom: 20px;
+      flex: 0 0 257px;
+      padding: 35px 60px;
+    }
+
+  }
+  &__img_bottom {
+    flex: 0 0 287px;
+    padding: 35px 65px;
+    background-color: #fff;
+    border-right: 1px solid #EFEFEF;
+    @media (max-width: $breakpoint1190) {
+      margin-bottom: 20px;
+      flex: 0 0 487px;
+      padding: 35px 185px;
+    }
+    @media (max-width: $breakpoint589) {
+      margin-bottom: 20px;
+      flex: 0 0 387px;
+      padding: 35px 120px;
+    }
+    @media (max-width: $breakpoint480) {
+      margin-bottom: 20px;
+      flex: 0 0 257px;
+      padding: 35px 60px;
+    }
+  }
+}

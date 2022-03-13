@@ -18,21 +18,50 @@
     </nav>
     <div class="container">
         <div class="header__block">
-            <div class="header__logo">
-                <img src="../img/logo.png" alt="logo" class="main_logo">
+            <div class="flexclass header__logo">
+                <a href="#">
+                    <img src="../img/logo.png" alt="logo" class="main_logo">
+                </a>
             </div>
-            <div class="header__search">
+            <div class="flexclass header__search">
                 <form action="">
-                    
-                    <input type="search" name="search">
+                    <input type="search" name="search" >
+                    <button type="submit">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M19.7122 17.9343L15.1826 13.5835C16.296 12.205 16.9605 10.4767 16.9605 8.6007C16.9605 4.10871 13.1563 0.454529 8.47962 0.454529C3.8042 0.454268 0 4.10845 0 8.6007C0 13.0929 3.8042 16.7474 8.47988 16.7474C10.4968 16.7474 12.3506 16.0666 13.8079 14.933L18.322 19.2689C18.513 19.4534 18.7653 19.5457 19.0166 19.5457C19.2689 19.5457 19.5202 19.4534 19.7122 19.2689C20.096 18.8997 20.096 18.3033 19.7122 17.9343ZM1.96629 8.6007C1.96629 5.15056 4.88859 2.34411 8.47988 2.34411C12.0722 2.34411 14.9945 5.15056 14.9945 8.6007C14.9945 12.0508 12.0722 14.8591 8.47988 14.8591C4.88859 14.8591 1.96629 12.0506 1.96629 8.6007Z" fill="#BDBDBD"/>
+                        </svg>
+                    </button>
                 </form>
             </div>
-            <div class="header__tel">
+            <div class="flexclass header__tel">
                 <span><a href="tel:8 (812) 123-45-67">8 (812) 123-45-67</a></span>
             </div>
-            <div class="header__telbutton">
+            <div class="flexclass header__telbutton">
                 <a href="" class="tellbutton">Обратный звонок</a>
+
+                <div class="modal__wrapper">
+                    <div class="modal">
+                        <div class="modal__close"> <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px"></div>
+                        <div class="modal__title"><span>Заголовок</span> </div>
+                        <div class="modal__body">
+                            <form action="">
+                                <input type="tel" class="tel" placeholder="Номер телефона">
+                                <input type="submit" class="sub" value="Заказать звонок">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="nav__header_bottom">
+            <ul class="nav__header_bottom_ul">
+                <li><a href="#" class="nav__item">Парикмахерская</a></li>
+                <li><a href="#" class="nav__item">Барбершоп</a></li>
+                <li><a href="#" class="nav__item">Маникюр</a></li>
+                <li><a href="#" class="nav__item">Педикюр</a></li>
+                <li><a href="#" class="nav__item">Массаж</a></li>
+                <li><a href="#" class="nav__item">Мебель</a></li>
+            </ul>
         </div>
     </div>
 </header>

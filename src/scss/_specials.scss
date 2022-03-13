@@ -1,0 +1,217 @@
+//specials
+
+.specials {
+
+  &__section {
+    padding-top: 80px;
+    background: #EFEFEF;
+  }
+
+
+  &__header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 38px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: $breakpoint1120) {
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    flex: 0 0 255px;
+    text-align: center;
+    height: 373px;
+    background: #fff;
+    padding: 25px 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-right: 0;
+      @media (max-width: $breakpoint1120) {
+        margin-right: 20px;
+      }
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #333333;
+      margin-top: 20px;
+    }
+
+    span {
+      display: inline-block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: #000000;
+      margin-top: 20px;
+
+      &::after {
+        content: ' ₽';
+      }
+    }
+
+    &_button {
+      margin-top: 20px;
+      a {
+        background: #F13C6E;
+        border-radius: 30px;
+        padding: 9px 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        background-image: -webkit-linear-gradient(45deg, #ffffff 50%, transparent 50%);
+        background-image: linear-gradient(45deg, #ffffff 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        -webkit-transition: background 300ms ease-in-out;
+        transition: background 300ms ease-in-out;
+
+        &:hover {
+          color: #f13c6e;
+          background-position: 0;
+        }
+      }
+    }
+  }
+}
+
+.info__row {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  @media (max-width: $breakpoint1190) {
+    flex-direction: column;
+  }
+
+  .info__block {
+    flex: 0 0 555px;
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+    background: #F13C6E;
+    height: 212px;
+    padding: 35px 40px;
+    @media (max-width: $breakpoint368) {
+      padding: 5px 10px;
+    }
+    display: flex;
+    align-items: center;
+    @media (max-width: $breakpoint1190) {
+      margin-bottom: 50px;
+      height: 32px;
+      flex: 0 0 265px;
+      margin-right: 0;
+      justify-content: space-evenly;
+    }
+    @media (max-width: $breakpoint589) {
+      text-align: center;
+    }
+    h3 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+    }
+
+    span {
+      display: inline-block;
+      margin-top: 25px;
+      width: 255px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #FFFFFF;
+      @media (max-width: $breakpoint368) {
+        width:150px;
+      }
+
+    }
+
+    input[type="email"] {
+      background: #fff;
+      border-radius: 40px;
+      width: 250px;
+      height: 35px;
+      padding: 0 20px;
+      margin-top: 25px;
+      @media (max-width: $breakpoint368) {
+        width:150px;
+      }
+    }
+
+    .info__block__left_right {
+      margin-left: 75px;
+      @media (max-width: $breakpoint589) {
+        display: none;
+      }
+    }
+  }
+  .info__block__right_left {
+    @media (max-width: $breakpoint589) {
+      text-align: center;
+    }
+    span {
+      width: 141px;
+    }
+    .info__block__right_button {
+      margin-top: 35px;
+    }
+    a {
+      background: #f13c6e;
+      border: 2px solid #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 40px;
+      padding: 9px 20px;
+      color: white;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      background-image: -webkit-linear-gradient(45deg, #ffffff 50%, transparent 50%);
+      background-image: linear-gradient(45deg, #ffffff 50%, transparent 50%);
+      background-position: 100%;
+      background-size: 400%;
+      -webkit-transition: background 300ms ease-in-out;
+      transition: background 300ms ease-in-out;
+
+      &:hover {
+        color: #f13c6e;
+        background-position: 0;
+      }
+    }
+  }
+  .info__block__right_right {
+    margin-left: 110px;
+    @media (max-width: $breakpoint589) {
+      display: none;
+    }
+  }
+
+}
